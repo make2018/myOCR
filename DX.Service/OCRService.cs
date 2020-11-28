@@ -38,12 +38,6 @@ namespace DX.Service
                 logger.Error("Connected init ocr service error, {0}", ex.ToString());
             }
         }
-
-        public void InitOCRService(bool v, object cAMERAPATH)
-        {
-            throw new NotImplementedException();
-        }
-
         public void ReleaseOCRService()
         {
             try

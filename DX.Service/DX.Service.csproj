@@ -51,10 +51,6 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DX.Contract, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\C#\OCR\DX.CCRSkidService\bin\Debug\DX.Contract.dll</HintPath>
-    </Reference>
     <Reference Include="OpenCvSharp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6adad1e807fea099, processorArchitecture=MSIL">
       <HintPath>..\packages\OpenCvSharp3-AnyCPU.4.0.0.20181129\lib\net40\OpenCvSharp.dll</HintPath>
       <Private>True</Private>
@@ -82,12 +78,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MessageService.cs" />
     <Compile Include="OCRService.cs" />
     <Compile Include="ServiceHolder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DX.Log\DX.Log.csproj">
+      <Project>{f6fe3f10-422c-4fa6-9e0a-e52708aa7553}</Project>
+      <Name>DX.Log</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DX.OCR\DX.OCR.csproj">
       <Project>{ff6aaefd-62a3-42f2-ba73-b4543f6a593c}</Project>
       <Name>DX.OCR</Name>

@@ -16,14 +16,18 @@ namespace DX.Service
         private string[] strStates = new string[7];//读出状态        
 
         private DXLog logger = DXLog.GetLogger(typeof(ServiceHolder));
+
+       
         private OCRService ocrService = new OCRService();
 
         public void Run()
         {            
             ThreadPool.QueueUserWorkItem(new WaitCallback(CameraListener));
+          
         }
 
-
+        //OPC监听线程
+      
         //相机线程:刷新相机缓存
         private void CameraListener(object obj)
         {

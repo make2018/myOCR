@@ -14,6 +14,7 @@ using OpenCvSharp;
 using OpenCvSharp.Extensions;
 using DX.Log;
 using generalPLC;
+using DX.OCR;
 
 
 namespace myOCR
@@ -44,6 +45,12 @@ namespace myOCR
         {
             DXLog.InitLog();
             this.logger = DXLog.GetLogger(typeof(MainForm));
+
+       
+            logger.Info("Main service start.");
+
+
+
             InitializeComponent();
         }
 

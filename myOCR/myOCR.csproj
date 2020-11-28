@@ -51,6 +51,9 @@
     <Reference Include="DX.Log">
       <HintPath>..\DX.Log\bin\Debug\DX.Log.dll</HintPath>
     </Reference>
+    <Reference Include="DX.OCR">
+      <HintPath>..\DX.OCR\bin\Debug\DX.OCR.dll</HintPath>
+    </Reference>
     <Reference Include="DX.Service">
       <HintPath>..\DX.Service\bin\Debug\DX.Service.dll</HintPath>
     </Reference>
