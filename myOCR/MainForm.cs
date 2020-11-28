@@ -83,5 +83,10 @@ namespace myOCR
             // plc.setChars(Constants.PLCIP, Convert.ToInt32(Constants.Rack), Convert.ToInt32(Constants.Slot), 2, 0, 4, textBox2.Text);
             plc.setChars(2, 0, 4, textBox2.Text);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            service.InitOCRService(true, Constants.CAMERAPATH);
+        }
     }
 }

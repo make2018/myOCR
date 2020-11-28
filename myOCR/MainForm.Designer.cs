@@ -61,46 +61,47 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(252, 368);
+            this.textBox1.Location = new System.Drawing.Point(389, 399);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(99, 21);
             this.textBox1.TabIndex = 5;
             // 
             // btn_WriteValue
             // 
-            this.btn_WriteValue.Location = new System.Drawing.Point(362, 418);
+            this.btn_WriteValue.Location = new System.Drawing.Point(499, 449);
             this.btn_WriteValue.Name = "btn_WriteValue";
             this.btn_WriteValue.Size = new System.Drawing.Size(92, 29);
             this.btn_WriteValue.TabIndex = 6;
-            this.btn_WriteValue.Text = "Write";
+            this.btn_WriteValue.Text = "WritePLC";
             this.btn_WriteValue.UseVisualStyleBackColor = true;
             this.btn_WriteValue.Click += new System.EventHandler(this.btn_WriteValue_Click);
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(252, 423);
+            this.textBox2.Location = new System.Drawing.Point(389, 454);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(99, 21);
             this.textBox2.TabIndex = 7;
             // 
             // btn_ReadValue
             // 
-            this.btn_ReadValue.Location = new System.Drawing.Point(366, 362);
+            this.btn_ReadValue.Location = new System.Drawing.Point(503, 393);
             this.btn_ReadValue.Name = "btn_ReadValue";
             this.btn_ReadValue.Size = new System.Drawing.Size(90, 27);
             this.btn_ReadValue.TabIndex = 8;
-            this.btn_ReadValue.Text = "Read";
+            this.btn_ReadValue.Text = "ReadPLC";
             this.btn_ReadValue.UseVisualStyleBackColor = true;
             this.btn_ReadValue.Click += new System.EventHandler(this.btn_ReadValue_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(520, 192);
+            this.button1.Location = new System.Drawing.Point(12, 400);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(100, 23);
             this.button1.TabIndex = 9;
-            this.button1.Text = "button1";
+            this.button1.Text = "iniOCR";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // MainForm
             // 

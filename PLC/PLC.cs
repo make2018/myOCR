@@ -116,6 +116,7 @@ namespace generalPLC
         {
             Client.ConnectTo(ip, rack, slot);
             Client.DBWrite(dbnum, start, length, buffer);
+           
             Client.Disconnect();   
         }
 

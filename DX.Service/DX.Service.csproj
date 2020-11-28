@@ -88,10 +88,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DX.Log\DX.Log.csproj">
-      <Project>{f6fe3f10-422c-4fa6-9e0a-e52708aa7553}</Project>
-      <Name>DX.Log</Name>
-    </ProjectReference>
     <ProjectReference Include="..\DX.OCR\DX.OCR.csproj">
       <Project>{ff6aaefd-62a3-42f2-ba73-b4543f6a593c}</Project>
       <Name>DX.OCR</Name>
