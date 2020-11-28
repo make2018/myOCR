@@ -51,27 +51,21 @@
     <Reference Include="DX.Log">
       <HintPath>..\DX.Log\bin\Debug\DX.Log.dll</HintPath>
     </Reference>
-    <Reference Include="DX.OCR">
-      <HintPath>..\DX.OCR\bin\Debug\DX.OCR.dll</HintPath>
-    </Reference>
-    <Reference Include="DX.Service">
-      <HintPath>..\DX.Service\bin\Debug\DX.Service.dll</HintPath>
-    </Reference>
     <Reference Include="log4net, Version=2.0.12.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
       <HintPath>..\packages\log4net.2.0.12\lib\net45\log4net.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="OpenCvSharp">
-      <HintPath>..\DX.Service\bin\Debug\OpenCvSharp.dll</HintPath>
+      <HintPath>..\DX.OCR\bin\Release\OpenCvSharp.dll</HintPath>
     </Reference>
     <Reference Include="OpenCvSharp.Blob">
-      <HintPath>..\DX.Service\bin\Debug\OpenCvSharp.Blob.dll</HintPath>
+      <HintPath>..\DX.OCR\bin\Release\OpenCvSharp.Blob.dll</HintPath>
     </Reference>
     <Reference Include="OpenCvSharp.Extensions">
-      <HintPath>..\DX.Service\bin\Debug\OpenCvSharp.Extensions.dll</HintPath>
+      <HintPath>..\DX.OCR\bin\Release\OpenCvSharp.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="OpenCvSharp.UserInterface">
-      <HintPath>..\DX.Service\bin\Debug\OpenCvSharp.UserInterface.dll</HintPath>
+      <HintPath>..\DX.OCR\bin\Release\OpenCvSharp.UserInterface.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
@@ -126,6 +120,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DX.OCR\DX.OCR.csproj">
+      <Project>{ff6aaefd-62a3-42f2-ba73-b4543f6a593c}</Project>
+      <Name>DX.OCR</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DX.Service\DX.Service.csproj">
+      <Project>{93013175-2d86-4cc2-92e0-7018208887a5}</Project>
+      <Name>DX.Service</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DX.Utilities\DX.Utilities.csproj">
       <Project>{02810a9f-8dbc-40f6-92a7-79d7e69f902d}</Project>
       <Name>DX.Utilities</Name>
