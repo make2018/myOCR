@@ -58,7 +58,7 @@ namespace myOCR
         {
             if (!m_showing)
             {
-                service.InitOCRService(true, Constants.CAMERAPATH);
+                service.InitOCRService(false, Constants.CAMERAPATH);
 
                 timer1.Enabled = true;
                 m_showing = true;
@@ -100,7 +100,34 @@ namespace myOCR
 
         private void button1_Click(object sender, EventArgs e)
         {
-            service.InitOCRService(true, Constants.CAMERAPATH);
+            service.InitOCRService(false, Constants.CAMERAPATH);
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            try
+            {
+                Mat img = service.GetCurrFrame();
+                Bitmap bitmap = BitmapConverter.ToBitmap(img);
+
+                pictureBox1.Image = bitmap;
+
+          
+
+
+            }
+            catch (Exception ex)
+            {
+                logger.Error("Show real image error,{0}", ex.ToString());
+            }
+
+        }
+
+        private void btn_OCR_Click(object sender, EventArgs e)
+        {
+            string str = service.StartSkidOCR();
+            txt_OCR.Text = str;
+
         }
     }
 }
