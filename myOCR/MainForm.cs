@@ -83,12 +83,19 @@ namespace myOCR
         {
            // textBox1.Text = plc.getChars(Constants.PLCIP, Convert.ToInt32(Constants.Rack), Convert.ToInt32(Constants.Slot), 2, 0, 4);
             textBox1.Text = plc.getChars(2, 0, 4);
+
+
+            
+
+            logger.Info("ReadPLC Value is :{0}", textBox1.Text);
         }
 
         private void btn_WriteValue_Click(object sender, EventArgs e)
         {
             // plc.setChars(Constants.PLCIP, Convert.ToInt32(Constants.Rack), Convert.ToInt32(Constants.Slot), 2, 0, 4, textBox2.Text);
             plc.setChars(2, 0, 4, textBox2.Text);
+
+            logger.Info("WritePLC Value is :{0}", textBox2.Text);
         }
 
         private void button1_Click(object sender, EventArgs e)

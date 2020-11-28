@@ -37,6 +37,8 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.btn_ReadValue = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.txt_OCR = new System.Windows.Forms.TextBox();
+            this.btn_OCR = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -95,7 +97,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 400);
+            this.button1.Location = new System.Drawing.Point(145, 399);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 23);
             this.button1.TabIndex = 9;
@@ -103,11 +105,29 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // txt_OCR
+            // 
+            this.txt_OCR.Location = new System.Drawing.Point(11, 428);
+            this.txt_OCR.Name = "txt_OCR";
+            this.txt_OCR.Size = new System.Drawing.Size(92, 21);
+            this.txt_OCR.TabIndex = 10;
+            // 
+            // btn_OCR
+            // 
+            this.btn_OCR.Location = new System.Drawing.Point(145, 428);
+            this.btn_OCR.Name = "btn_OCR";
+            this.btn_OCR.Size = new System.Drawing.Size(100, 26);
+            this.btn_OCR.TabIndex = 11;
+            this.btn_OCR.Text = "OCR";
+            this.btn_OCR.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(603, 490);
+            this.Controls.Add(this.btn_OCR);
+            this.Controls.Add(this.txt_OCR);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_ReadValue);
             this.Controls.Add(this.textBox2);
@@ -133,6 +153,8 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button btn_ReadValue;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txt_OCR;
+        private System.Windows.Forms.Button btn_OCR;
     }
 }
 
